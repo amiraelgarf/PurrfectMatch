@@ -190,12 +190,13 @@ app.delete("/pets/:id", (req, res) => {
 
 
 //insert a new pet
+//note adjust the database to increment the id automatically 
 app.post("/pets/insert", (req, res) => {
   const { PetID, name, gender, breed, type, dateOfBirth, userId, centerName } = req.body || {};
 
   console.log(req.body);
 
-  // First, query the TypeID based on the provided Type
+  
   connection.query(
     "SELECT TypeID FROM Type WHERE TypeName = ?",
     [type],
@@ -209,7 +210,7 @@ app.post("/pets/insert", (req, res) => {
 
       const typeId = rows[0].TypeID;
 
-      // Now, query the CenterID based on the provided CenterName
+     
       connection.query(
         "SELECT CenterID FROM Center WHERE CenterName = ?",
         [centerName],
@@ -223,7 +224,7 @@ app.post("/pets/insert", (req, res) => {
 
           const centerId = rows[0].CenterID;
 
-          // Now, insert the pet with the obtained TypeID and CenterID
+          
           connection.query(
             "INSERT INTO pet (PetID, Name, Gender, Breed, TypeID, DateOfBirth, UserID, CenterID) VALUES (?,?, ?, ?, ?, ?, ?, ?)",
             [PetID, name, gender, breed, typeId, dateOfBirth, userId, centerId],

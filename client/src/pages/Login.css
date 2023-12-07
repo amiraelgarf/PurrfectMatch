@@ -1,0 +1,122 @@
+
+.login-container {
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr 100px; /* Define rows with fixed and flexible sizes */
+  grid-template-columns: 200px 1fr; /* Define columns with fixed and flexible sizes */
+  /* grid-template-areas:
+    'header header'
+    'sidebar main-content'
+    'footer footer'; */
+  height: 100vh;
+}
+
+.login-to-profile
+{
+  position: absolute;
+  width: 166px;
+  height: 49px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #F07681;
+}
+
+.login {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  border: none;
+  color: #918C88;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.login span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.login span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.login:hover span {
+  padding-right: 25px;
+}
+
+.login:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.sign-up {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  border: none;
+  color: #918C88;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.sign-up span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.sign-up span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.sign-up:hover span {
+  padding-right: 25px;
+}
+
+.sign-up:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+input[type=text], select {
+  width: 532.5px;
+  height: 75px;
+  flex-shrink: 0;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #918C88;
+  background: #EBF6F2;
+  border-radius: 55px;
+  box-sizing: border-box;
+}
+
+.oval-shape {
+  /* grid-area: oval; */
+  background-color: #3498db; /* Oval color */
+  border-radius: 50%; /* Make it circular (50% border-radius) */
+}

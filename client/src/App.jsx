@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import Login from "./Login";
+import Login from "./pages/Login";
 
 //import Blogs from "./pages/Blogs";
 //import Contact from "./pages/Contact";

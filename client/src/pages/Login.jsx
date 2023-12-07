@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import './Login.css';
 
 
 
@@ -34,18 +35,24 @@ function Login() {
           });
     }
     return (
-      <div>
-          <button> Sign Up</button>
-          <button> Login </button>
+      <div
+      style={{ position: 'relative', height: '100vh', boxSizing: 'border-box' }}
+    >
+      <div className="login-container">
+          <button className="sign-up"> <span>Sign Up</span></button>
+          <button className="login" > <span> Login </span> </button>
+
+          <div className="oval-shape"></div>
   
           <form onSubmit={handleSubmit}>
-            <label htmlFor="Username"> Username</label>
-              <input type="text" value= {logindata.Username} onChange={handleInputChange} name="Username"/>
+            
+              <input type="text" placeholder="Username" value= {logindata.Username} onChange={handleInputChange} name="Username"/>
 
-              <label htmlFor="Password"> Password</label>
-              <input type="text" value={logindata.Password} onChange={handleInputChange} name="Password" />
-              <button> Sign Up</button>
+              
+              <input type="text" placeholder="Password" value={logindata.Password} onChange={handleInputChange} name="Password" />
+              <button className="login-to-profile"> LogIn</button>
           </form>
+      </div>
       </div>
     );
   }

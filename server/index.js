@@ -35,10 +35,10 @@ connection.connect((err) => {
 
 //user login
 app.post("/user/login", (req, res) => {
-  const { username, password } = req.body;
+  const { Username, Password } = req.body;
   connection.query(
-    "select * from user where UserID = ? and FirstName = ?",
-    [username, password],
+    "select * from authentication where Username = ? and Password = ?",
+    [Username, Password],
     function (err, row) {
       if (err) {
         return res.status(500).json();

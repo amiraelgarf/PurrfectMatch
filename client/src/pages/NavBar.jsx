@@ -30,3 +30,5 @@ export default function NavBar({homeactive, petsactive, productsactive,appactive
   }
   
   
+
+   

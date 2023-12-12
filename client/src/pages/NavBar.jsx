@@ -1,9 +1,9 @@
 import {useMatch, useResolvedPath, NavLink} from "react-router-dom";
 
-export default function NavBar({homeactive}){
-   
+export default function NavBar({style}){
+  
     return(
-    <nav className="nav">
+      <nav className="nav" style={style}>
     <ul>
       <CustomLink to="/home">Home</CustomLink> 
       <CustomLink to="/pets">Pets</CustomLink>

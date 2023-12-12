@@ -10,6 +10,12 @@ import {Route, Routes, useNavigate} from "react-router-dom";
 
 export default function Home() {
 
+  const navStyle = {
+    borderColor: '#38BFB6',
+    borderStyle: 'solid',
+    borderWidth: '5px'
+};
+
 const navigate = useNavigate();
 
   const handleClick = () => {
@@ -17,6 +23,7 @@ const navigate = useNavigate();
   };
 
 function HomeImages() {
+  
   return (
     <div>
       <img src="./Images/pawsgroup homepage.png" alt="Description" className="pawsbackgroundimage" />
@@ -27,13 +34,14 @@ function HomeImages() {
   );
 }
 
+
   return (
     <div className="background">
       <div className="findyour">Find Your</div>
       <div className="purrfectmatch">PurrfectMatch</div>
       <button className="startnowbutton" onClick={handleClick}>Start Now</button>
       <HomeImages />
-      <NavBar homeactive = {true} />
+      <NavBar style={navStyle}/>
         <Routes>
           <Route path="/home" element = {<Home  />} />
           <Route path="/pets" element = {<Pets/>} />

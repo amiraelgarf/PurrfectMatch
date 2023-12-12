@@ -1,7 +1,8 @@
  .background {
     width: 1520px;
     height: 740px;
-    background: #DAF4F3;
+    background-color: #DAF4F3;
+    display: flex;
     z-index: 0;
   }
 
@@ -85,8 +86,6 @@
     position: absolute;
     background: #FFF6EF;
     border-radius: 16px;
-    border: 5px solid #38BFB6;
-    z-index: 15;
     font-size:22px;
     line-height: 25px;
     font-family: 'Abhaya Libre Medium';
@@ -130,10 +129,7 @@
     color: #FFF6EF;
   }
 
-  .homebutton{
-    background-color: #38BFB6;
-    color: #FFF6EF;
-  }
+
 
   
   

@@ -21,11 +21,10 @@ export default function App() {
           {/* <Route path="blogs" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} /> */
-          // Danah is retarded 
         }
           
         </Route>
-        <Route path="/home" element={<Home />}/>
+        <Route path="/home/*" element={<Home />}/>
         <Route path="/pets" element={<Pets />}/>
         <Route path="/products" element={<Products />}/>
         <Route path="/appointments" element={<Appointments />}/>

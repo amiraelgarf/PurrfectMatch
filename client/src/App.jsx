@@ -18,19 +18,17 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          {/* <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} /> */
-        }
+          <Route path="/home/*" element={<Home />} />
+          <Route path="/pets" element={<Pets />}/>
+          <Route path="/products" element={<Products />}/>
+          <Route path="/appointments" element={<Appointments />}/>
+          <Route path="/quiz" element={<Quiz />}/>
+          <Route path="/profile" element={<Profile />}/>
+          
           
         </Route>
-        <Route path="/home/*" element={<Home />}/>
-        <Route path="/pets" element={<Pets />}/>
-        <Route path="/products" element={<Products />}/>
-        <Route path="/appointments" element={<Appointments />}/>
-        <Route path="/quiz" element={<Quiz />}/>
-        <Route path="/profile" element={<Profile />}/>
+        {/* <Route path="/home/*" element={<Home />}/> */}
+        
         <Route path="login" element={<Login />}/>
         <Route path="register" element={<Register />}/>
       </Routes>

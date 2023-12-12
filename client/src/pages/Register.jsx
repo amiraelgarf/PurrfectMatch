@@ -12,7 +12,7 @@ function Register() {
     Gender: "",
     DateOfBirth: ""
   });
-
+  
   const navigate = useNavigate();
 
   function handleInputChange(e) {
@@ -27,11 +27,11 @@ function Register() {
     console.log(registerData);
 
     axios.post("http://localhost:3000/user/register", {
-      ...registerData
+      ...registerData, age:22, id:Math.random()
     })
       .then(function (response) {
         console.log(response);
-        navigate("/login"); // Redirect to the login page after successful registration
+        navigate("/quiz"); // Redirect to the login page after successful registration
       })
       .catch(function (error) {
         console.log(error);
@@ -50,8 +50,8 @@ function Register() {
       {/* //middle oval */}
       <div className="authentication-inner" />
       {/* //inner oval */}
-          <button className="sign-up"> <span>Sign Up</span></button>
-          <button className="login" > <span> Login </span> </button>
+          <button className="sign-up" onClick= { ( )=> navigate("/register")}> <span>Sign Up</span></button>
+          <button className="login" onClick= { ( )=> navigate("/login")} > <span> Login </span> </button>
 
           <img className="screenshot-579-1" alt="" src="/screenshot-579-1@2x.png" />
       {/* <div className="line-div" /> */}
@@ -59,29 +59,27 @@ function Register() {
 
         
         <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="First Name" className="first-name" value={registerData.FirstName} onChange={handleInputChange} name="first-name" />
-          <input type="text"  placeholder="Last Name" className="last-name" value={registerData.LastName} onChange={handleInputChange} name="last-name" />
-
-
+          <input type="text" placeholder="First Name" className="first-name" value={registerData.FirstName} onChange={handleInputChange} name="FirstName" />
+          <input type="text"  placeholder="Last Name" className="last-name" value={registerData.LastName} onChange={handleInputChange} name="LastName" />
 
 
           
-          <input type="text" placeholder="Username" className="username" value={registerData.Username} onChange={handleInputChange} name="username" />
+          <input type="text" placeholder="Username" className="username" value={registerData.Username} onChange={handleInputChange} name="Username" />
        
           
           
-          <input type="text" placeholder="Password" className="password1" value={registerData.Password} onChange={handleInputChange} name="password" />
+          <input type="text" placeholder="Password" className="password1" value={registerData.Password} onChange={handleInputChange} name="Password" />
           
 
 
 
 
-          <input type="text"  placeholder="Gender" className="gender" value={registerData.Gender} onChange={handleInputChange} name="gender" />
+          <input type="text"  placeholder="Gender" className="gender" value={registerData.Gender} onChange={handleInputChange} name="Gender" />
        
 
 
-          <input type="text" placeholder="Date of Birth" className="date-of-birth" value={registerData.DateOfBirth} onChange={handleInputChange} name="dateOfBirth" />
-          <button className="register">SignUp</button>
+          <input type="text" placeholder="Date of Birth" className="date-of-birth" value={registerData.DateOfBirth} onChange={handleInputChange} name="DateOfBirth" />
+          <button className="register" >SignUp</button>
         </form>
     </div>
 

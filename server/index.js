@@ -51,21 +51,57 @@ app.post("/user/login", (req, res) => {
 });
 
 //user register
-app.post("/user/register", (req, res) => {
-  const { username, password, type } = req.body;
-  connection.query(
-    "insert into authentication values (?,?,?)",
-    [username, password, type],
-    function (err, row) {
-      if (err) {
-        return res.status(500).json();
-      }
-      //removed the second if cause register doesnt return anything to check on if length < 0
-      tempname = username;
-      return res.status(201).json(row);
-    }
-  );
+app.post("/user/register", async (req, res) => {
+  try {
+    const { id, FirstName,
+    LastName,
+    Username,
+    Password,
+    Gender,
+    age,
+    DateOfBirth } = req.body;
+
+    console.log(id, FirstName,
+      LastName,
+      Username,
+      Password,
+      Gender,
+      age,
+      DateOfBirth)
+
+    // Insert into authentication table
+    const authQuery = "INSERT INTO authentication VALUES (?, ?, ?)";
+    await new Promise((resolve, reject) => {
+      connection.query(authQuery, [Username, Password, "customer"], function (err, row) {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(row);
+        }
+      });
+    });
+
+    // Insert into user table
+    const userQuery = "INSERT INTO user VALUES (?, ?, ?, ?, ?, ?)";
+    await new Promise((resolve, reject) => {
+      connection.query(userQuery, [id, FirstName, LastName, DateOfBirth, age, Gender], function (err, row1) {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(row1);
+        }
+      });
+    });
+
+    // Respond to the client
+    return res.status(201).json({ message: "Registration successful" });
+
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "Internal Server Error" });
+  }
 });
+
 
 //user register
 app.post("/user/customer-data", (req, res) => {

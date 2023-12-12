@@ -48,8 +48,8 @@ function Login() {
       {/* //middle oval */}
       <div className="authentication-inner" />
       {/* //inner oval */}
-          <button className="sign-up"> <span>Sign Up</span></button>
-          <button className="login" > <span> Login </span> </button>
+      <button className="sign-up" onClick= { ( )=> navigate("/register")}> <span>Sign Up</span></button>
+          <button className="login" onClick= { ( )=> navigate("/login")} > <span> Login </span> </button>
 
           <img className="screenshot-579-1" alt="" src="/screenshot-579-1@2x.png" />
       {/* <div className="line-div" /> */}

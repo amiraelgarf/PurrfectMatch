@@ -7,6 +7,8 @@ import Appointments from './pages/Appointments';
 import Quiz from './pages/Quiz';
 import Profile from './pages/Profile';
 import Login from "./pages/Login";
+import MyPets from "./pages/mypets";
+import MyCart from "./pages/mycart";
 
 //import Blogs from "./pages/Blogs";
 //import Contact from "./pages/Contact";
@@ -31,7 +33,9 @@ export default function App() {
         <Route path="/appointments" element={<Appointments />}/>
         <Route path="/quiz" element={<Quiz />}/>
         <Route path="/profile" element={<Profile />}/>
-        <Route path="login" element={<Login />}/>
+        <Route path="/mypets" element={<MyPets/>}/>
+        <Route path="/mycart" element={<MyCart/>}/>
+        <Route path="/login" element={<Login />}/>
       </Routes>
     </BrowserRouter>
   );

@@ -34,25 +34,22 @@ function Login() {
             console.log(error);
           });
     }
+
     return (
-      <div
-      style={{ position: 'relative', height: '100vh', boxSizing: 'border-box' }}
-    >
-      <div className="login-container">
-          <button className="sign-up"> <span>Sign Up</span></button>
-          <button className="login" > <span> Login </span> </button>
-
-          <div className="oval-shape"></div>
-  
+      
+      <div className="backgroundauthentication">
+      <div className="login-container"> </div>
+      <button className="sign-up" onClick= { ( )=> navigate("/register")}> <span>Sign Up</span></button>
+      <button className="login" onClick= { ( )=> navigate("/login")} > <span> Login </span> </button>
           <form onSubmit={handleSubmit}>
-            
               <input type="text" placeholder="Username" value= {logindata.Username} onChange={handleInputChange} name="Username"/>
-
-              
-              <input type="text" placeholder="Password" value={logindata.Password} onChange={handleInputChange} name="Password" />
-              <button className="login-to-profile"> LogIn</button>
+              <input type="text" placeholder="Password"  className="password" value={logindata.Password} onChange={handleInputChange} name="Password"  />
+              <button className="login1"> LogIn</button>
           </form>
-      </div>
+      <img src="./Images/authentication dog.png" alt="Description" className="dog" />
+      <img src="./Images/authentication circles.png" alt="Description" className="circles" />
+      <img src="./Images/logo noname.png" alt="Description" className="logo" />
+      <div className="PurrfectMatchLogo">PurrfectMatch.com</div>
       </div>
     );
   }

@@ -1,12 +1,21 @@
-import NavBar from './NavBar';
+import {useNavigate} from "react-router-dom";
+import NavBar from './NavBarCustomer';
 import './Products.css';
+import Layout from "./Layout";
 
 export default function Products(){
+    const navigate = useNavigate();
+    const handleClick = () => {
+      navigate('/mycart');
+    };
 
     return(
-        <div className = "background2">
+        <div className = "background3">
+        <button onClick={handleClick} className="mycartteal">
+        <img src="./Images/cart TEAL.png" alt="Description" className="mycartteal-icon" />
+        </button>
        <NavBar/>
-        <h1>Products</h1>
+       <Layout/>
         </div>
     )
 }

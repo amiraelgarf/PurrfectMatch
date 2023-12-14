@@ -1,12 +1,7 @@
 import React from 'react';
 import './Home.css';
-import Pets from './Pets';
-import Products from './Products';
-import Appointments from './Appointments';
-import Quiz from './Quiz';
-import Profile from './Profile';
-import NavBar from './NavBar';
-import {Route, Routes, useNavigate} from "react-router-dom";
+import NavBar from './NavBarCustomer';
+import {useNavigate} from "react-router-dom";
 
 export default function Home() {
 
@@ -36,14 +31,6 @@ function HomeImages() {
       <button className="startnowbutton" onClick={handleClick}>Start Now</button>
       <HomeImages />
       <NavBar/>
-        <Routes>
-          <Route path="/home" element = {<Home/>} />
-          <Route path="/pets" element = {<Pets/>} />
-          <Route path="/products" element = {<Products/>} />
-          <Route path="/appointments" element = {<Appointments/>} />
-          <Route path="/quiz" element = {<Quiz/>} />
-          <Route path="/profile" element = {<Profile/>} />
-        </Routes>
     </div>
   );
   

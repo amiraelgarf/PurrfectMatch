@@ -1,14 +1,12 @@
 
-
-.background3{
+.background2{
     width: 1520px;
     height: 740px;
-    background-color: #DAF4F3;
+    background-color: #DACDED;
     display: flex;
-  
 }
 
-.mycartteal{
+.mycartpurple2{
     width: 64px;
     height: 65px;
     position: absolute;
@@ -18,7 +16,7 @@
     background-color: transparent ;
   }
 
-  .mycartteal-icon{
+  .mycartpurple2-icon{
     width: 64px;
     height: 65px;
     position: absolute;
@@ -26,4 +24,3 @@
     top: 0px;
     z-index: 20;  
   }
-

@@ -16,7 +16,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/*" element={<Layout />}>
           <Route index element={<Home />} />
           {/* <Route path="blogs" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
@@ -24,7 +24,8 @@ export default function App() {
         }
           
         </Route>
-        <Route path="/home/*" element={<Home />}/>
+        
+        <Route path="/home" element={<Home />}/>
         <Route path="/pets" element={<Pets />}/>
         <Route path="/products" element={<Products />}/>
         <Route path="/appointments" element={<Appointments />}/>

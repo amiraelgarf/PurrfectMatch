@@ -119,15 +119,15 @@
     color: inherit;
  }
 
- .nav li.active{
+ /* .nav li.active{
     background-color: #38BFB6 ;
     color: #FFF6EF;
- }
+ } */
   
-  .nav li:hover {
+  /* .nav li:hover {
     background-color: #38BFB6;
     color: #FFF6EF;
-  }
+  } */
 
 
 

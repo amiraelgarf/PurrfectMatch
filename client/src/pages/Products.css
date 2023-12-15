@@ -1,29 +1,26 @@
+.background3 {
+  width: 1520px;
+  height: 740px;
+  background-color: #DAF4F3;
+  display: flex;
 
-
-.background3{
-    width: 1520px;
-    height: 740px;
-    background-color: #DAF4F3;
-    display: flex;
-  
 }
 
-.mycartteal{
-    width: 64px;
-    height: 65px;
-    position: absolute;
-    left: 1370px;
-    top: 55px;
-    z-index: 0;
-    background-color: transparent ;
-  }
+.mycartteal {
+  width: 64px;
+  height: 65px;
+  position: absolute;
+  left: 1370px;
+  top: 55px;
+  z-index: 0;
+  background-color: transparent;
+}
 
-  .mycartteal-icon{
-    width: 64px;
-    height: 65px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 20;  
-  }
-
+.mycartteal-icon {
+  width: 64px;
+  height: 65px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 20;
+}

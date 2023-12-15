@@ -1,0 +1,122 @@
+.background5 {
+    width: 1520px;
+    height: 740px;
+    background-color: #DACDED;
+    display: flex;
+    overflow: hidden;
+}
+
+.mycartpurple5 {
+    width: 64px;
+    height: 65px;
+    position: absolute;
+    left: 1370px;
+    top: 55px;
+    z-index: 0;
+    background-color: transparent;
+}
+
+.mycartpurple5-icon {
+    width: 64px;
+    height: 65px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 20;
+}
+
+.rectangle {
+    background-color: #fff5ef;
+    border-radius: 45px;
+    height: 520px;
+    left: 50px;
+    position: absolute;
+    top: 160px;
+    width: 1420px;
+}
+
+.vSunshine {
+    height: 693px;
+    scale: 68%;
+    left: -2px;
+    position: absolute;
+    top: 75px;
+    width: 529px;
+}
+
+.tSunshine2 {
+    color: #000000;
+    background-color: transparent;
+    font-family: 'Abhaya Libre ExtraBold';
+    font-size: 100px;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    top: 170px;
+    left: 500px;
+}
+
+.desSunshine {
+    color: #000000;
+    background-color: transparent;
+    font-family: 'Abhaya LibreSmiBold';
+    position: absolute;
+    text-align: left;
+    font-size: 23px;
+    font-weight: 300;
+    left: 510px;
+    top: 280px;
+    width: 500px;
+
+}
+
+.b1 {
+    background-color: #f07681;
+    font-family: 'Abhaya LibreSmiBold';
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 0;
+    height: 40px;
+    text-align: center;
+    border-radius: 12px;
+    left: 1050px;
+    position: absolute;
+    top: 620px;
+    width: 160px;
+    z-index: 30;
+}
+
+.b2 {
+    background-color: #f07681;
+    font-family: 'Abhaya LibreSmiBold';
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 0;
+    height: 40px;
+    text-align: center;
+    border-radius: 12px;
+    left: 1250px;
+    position: absolute;
+    top: 620px;
+    width: 160px;
+    z-index: 30;
+}
+
+.b3 {
+    background-color: #f07681;
+    font-family: 'Abhaya LibreSmiBold';
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 0;
+    height: 40px;
+    text-align: center;
+    border-radius: 12px;
+    left: 850px;
+    position: absolute;
+    top: 620px;
+    width: 160px;
+    z-index: 30;
+}

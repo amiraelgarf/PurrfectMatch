@@ -1,29 +1,496 @@
+.background3 {
+  width: 1520px;
+  height: 740px;
+  background-color: #DAF4F3;
+  display: flex;
 
-
-.background3{
-    width: 1520px;
-    height: 740px;
-    background-color: #DAF4F3;
-    display: flex;
-  
 }
 
-.mycartteal{
-    width: 64px;
-    height: 65px;
-    position: absolute;
-    left: 1370px;
-    top: 55px;
-    z-index: 0;
-    background-color: transparent ;
-  }
+.mycartteal {
+  width: 64px;
+  height: 65px;
+  position: absolute;
+  left: 1370px;
+  top: 55px;
+  z-index: 0;
+  background-color: transparent;
+}
 
-  .mycartteal-icon{
-    width: 64px;
-    height: 65px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 20;  
-  }
+.mycartteal-icon {
+  width: 64px;
+  height: 65px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 20;
+}
 
+.filter3 {
+  background-color: #fff5ef;
+  border-radius: 0px 40px 0px 0px;
+  height: 580px;
+  left: 0;
+  position: absolute;
+  top: 150px;
+  width: 320px;
+  z-index: 10;
+}
+
+.searchbar3 {
+  background-color: #EBF6F2;
+  border-radius: 40px;
+  height: 40px;
+  left: 50px;
+  position: absolute;
+  top: 165px;
+  width: 250px;
+  z-index: 20;
+}
+
+.search3 {
+  color: #259F97;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 22px;
+  font-weight: 400;
+  left: 30px;
+  letter-spacing: 0;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  top: 160px;
+  white-space: nowrap;
+  width: 160px;
+  z-index: 30;
+}
+
+.searchicon3 {
+  height: 30px;
+  left: 10px;
+  object-fit: cover;
+  position: absolute;
+  top: 169px;
+  width: 30px;
+  z-index: 30;
+}
+
+.aType {
+  height: 10px;
+  left: 60px;
+  object-fit: cover;
+  position: absolute;
+  top: 250px;
+  width: 14px;
+  z-index: 10;
+}
+
+.sType {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 22px;
+  font-weight: 400;
+  left: 60px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: 90px;
+  z-index: 20;
+  top: 240px;
+}
+
+.aBrand {
+  height: 10px;
+  left: 60px;
+  object-fit: cover;
+  position: absolute;
+  top: 300px;
+  width: 14px;
+  z-index: 10;
+}
+
+.sBrand {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 22px;
+  font-weight: 400;
+  left: 60px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: left;
+  top: 290px;
+  white-space: nowrap;
+  width: 90px;
+  z-index: 20;
+}
+
+.aWeight {
+  height: 10px;
+  left: 60px;
+  object-fit: cover;
+  position: absolute;
+  top: 350px;
+  width: 14px;
+  z-index: 10;
+}
+
+.sWeight {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 22px;
+  font-weight: 400;
+  left: 60px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: left;
+  top: 340px;
+  white-space: nowrap;
+  width: 100px;
+  z-index: 20;
+}
+
+.aAvailability {
+  height: 10px;
+  left: 60px;
+  object-fit: cover;
+  position: absolute;
+  top: 400px;
+  width: 14px;
+  z-index: 10;
+}
+
+.sAvailability {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 22px;
+  font-weight: 400;
+  left: 60px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: left;
+  top: 390px;
+  white-space: nowrap;
+  width: 140px;
+  z-index: 20;
+}
+
+.aCategory {
+  height: 10px;
+  left: 60px;
+  object-fit: cover;
+  position: absolute;
+  top: 450px;
+  width: 14px;
+  z-index: 10;
+}
+
+.sCategory {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 22px;
+  font-weight: 400;
+  left: 60px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: left;
+  top: 440px;
+  white-space: nowrap;
+  width: 120px;
+  z-index: 20;
+}
+
+.rPro1 {
+  background-color: #38BFB6;
+  border-radius: 25px;
+  height: 280px;
+  left: 420px;
+  position: absolute;
+  top: 200px;
+  width: 280px;
+}
+
+.rwPro1 {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  height: 240px;
+  left: 440px;
+  position: absolute;
+  top: 220px;
+  width: 240px;
+  z-index: 10;
+}
+
+
+.namePro1 {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya Libre ExtraBold';
+  font-size: 60px;
+  font-weight: 400;
+  left: 450px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 520px;
+  white-space: nowrap;
+  width: 215px;
+  z-index: 20;
+}
+
+.pPro1 {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 26px;
+  font-weight: 400;
+  left: 450px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 560px;
+  white-space: nowrap;
+  width: 215px;
+  z-index: 20;
+}
+
+
+.addPro1 {
+  background-color: #f07681;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0;
+  height: 40px;
+  text-align: center;
+  border-radius: 12px;
+  left: 480px;
+  position: absolute;
+  top: 590px;
+  width: 160px;
+  z-index: 30;
+}
+
+
+
+.Pro1 {
+  border-radius: 0;
+  border-color: #38BFB6;
+  height: 240px;
+  left: 490px;
+  position: absolute;
+  top: 220px;
+  width: 150px;
+  z-index: 20;
+}
+
+.rPro2 {
+  background-color: #38BFB6;
+  border-radius: 25px;
+  height: 280px;
+  left: 770px;
+  position: absolute;
+  top: 200px;
+  width: 280px;
+}
+
+.rwPro2 {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  height: 240px;
+  left: 790px;
+  position: absolute;
+  top: 220px;
+  width: 240px;
+  z-index: 10;
+}
+
+.Pro2 {
+  border-radius: 16px;
+  border-color: #38BFB6;
+  height: 220px;
+  left: 830px;
+  position: absolute;
+  top: 230px;
+  width: 150px;
+  z-index: 20;
+}
+
+.namePro2 {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya Libre ExtraBold';
+  font-size: 60px;
+  font-weight: 400;
+  left: 790px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 520px;
+  white-space: nowrap;
+  width: 215px;
+  z-index: 20;
+}
+
+.pPro2 {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 26px;
+  font-weight: 400;
+  left: 805px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 560px;
+  white-space: nowrap;
+  width: 210px;
+  z-index: 20;
+}
+
+
+.addPro2 {
+  background-color: #f07681;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0;
+  height: 40px;
+  text-align: center;
+  border-radius: 12px;
+  left: 830px;
+  position: absolute;
+  top: 590px;
+  width: 160px;
+  z-index: 30;
+}
+
+
+
+.rPro3 {
+  background-color: #38BFB6;
+  border-radius: 25px;
+  height: 280px;
+  left: 1120px;
+  position: absolute;
+  top: 200px;
+  width: 280px;
+}
+
+.rwPro3 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 240px;
+  left: 1140px;
+  position: absolute;
+  top: 220px;
+  width: 240px;
+  z-index: 10;
+}
+
+.Pro3 {
+  border-radius: 0;
+  border-color: #38BFB6;
+  height: 210px;
+  left: 1155px;
+  position: absolute;
+  top: 235px;
+  width: 210px;
+  z-index: 20;
+}
+
+.namePro3 {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya Libre ExtraBold';
+  font-size: 60px;
+  font-weight: 400;
+  left: 1140px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 520px;
+  white-space: nowrap;
+  width: 215px;
+  z-index: 20;
+}
+
+.pPro3 {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 26px;
+  font-weight: 400;
+  left: 1140px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 560px;
+  white-space: nowrap;
+  width: 225px;
+  z-index: 20;
+}
+
+
+.addPro3 {
+  background-color: #f07681;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0;
+  height: 40px;
+  text-align: center;
+  border-radius: 12px;
+  left: 1175px;
+  position: absolute;
+  top: 590px;
+  width: 160px;
+  z-index: 30;
+}
+
+.r1 {
+  background-color: #38BFB6;
+  border-radius: 25px;
+  height: 280px;
+  left: 420px;
+  position: absolute;
+  top: 650px;
+  width: 280px;
+}
+
+.r2 {
+  background-color: #38BFB6;
+  border-radius: 25px;
+  height: 280px;
+  left: 770px;
+  position: absolute;
+  top: 650px;
+  width: 280px;
+}
+
+.r3 {
+  background-color: #38BFB6;
+  border-radius: 25px;
+  height: 280px;
+  left: 1120px;
+  position: absolute;
+  top: 650px;
+  width: 280px;
+}

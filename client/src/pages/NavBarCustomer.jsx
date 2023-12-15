@@ -1,9 +1,9 @@
-import {useMatch, useResolvedPath, NavLink, useLocation } from "react-router-dom";
+import { useMatch, useResolvedPath, NavLink, useLocation } from "react-router-dom";
 import { useState } from 'react';
 import './NavBarCustomer.css'
 
-export default function NavBar({style}){
-  
+export default function NavBar({ style }) {
+
   const [hoveredItem, setHoveredItem] = useState(null);
   const location = useLocation();
 
@@ -25,6 +25,9 @@ export default function NavBar({style}){
         break;
       case '/quiz':
         dynamicStyle = { borderColor: '#38BFB6', borderStyle: 'solid', borderWidth: '5px' };
+        break;
+      case '/viewpet':
+        dynamicStyle = { borderColor: '#6F3EB3', borderStyle: 'solid', borderWidth: '5px' };
         break;
       case '/profile':
         dynamicStyle = { borderColor: '#6F3EB3', borderStyle: 'solid', borderWidth: '5px' };
@@ -83,39 +86,40 @@ export default function NavBar({style}){
       <CustomLink to="/quiz" path="/quiz" setHoveredItem={setHoveredItem} hoveredItem={hoveredItem}>Quiz</CustomLink>
       <CustomLink to="/profile" path="/profile" setHoveredItem={setHoveredItem} hoveredItem={hoveredItem}>Profile</CustomLink>
     </ul>
+
     </nav>
-    );
-  
-    function CustomLink({ to, path, children, setHoveredItem, hoveredItem, ...props }){
-      const resolvedpath = useResolvedPath(to)
-      const isActive = useMatch({path: resolvedpath.pathname})
-      const [active, setActive] = useState(isActive);
+  );
 
-      const handleMouseEnter = () => {
-        setHoveredItem(path);
-      };
-  
-      const handleMouseLeave = () => {
-        setHoveredItem(null);
-      };
-  
-      const handleClick = () => {
-        setActive(!active);
-      };
+  function CustomLink({ to, path, children, setHoveredItem, hoveredItem, ...props }) {
+    const resolvedpath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedpath.pathname })
+    const [active, setActive] = useState(isActive);
 
-      return(
-        <li  className={isActive ? "active" : ""}
+    const handleMouseEnter = () => {
+      setHoveredItem(path);
+    };
+
+    const handleMouseLeave = () => {
+      setHoveredItem(null);
+    };
+
+    const handleClick = () => {
+      setActive(!active);
+    };
+
+    return (
+      <li className={isActive ? "active" : ""}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onClick={handleClick}
         style={active || hoveredItem === path ? getNavbarStyleHover(location.pathname) : {}}>
-          <NavLink to={to} {...props}>
-            {children}
-            </NavLink>
-        </li>
-      )
-    }
+        <NavLink to={to} {...props}>
+          {children}
+        </NavLink>
+      </li>
+    )
   }
+}
 
 
 

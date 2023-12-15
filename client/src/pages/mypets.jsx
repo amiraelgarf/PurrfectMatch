@@ -1,28 +1,30 @@
-import { useNavigate } from "react-router-dom";
-import Layout from "./Layout";
-import NavBar from "./NavBarCustomer";
-import './mypets.css'
+
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 
-export default function MyPets(){
+function MyButton({ onClick, label, style }) {
+    return (
+        <button onClick={onClick} style={style}>{label}</button>
+    );
+}
+
+
+export default function MyPets() {
     const navigate = useNavigate();
     const handleClick = () => {
-      navigate('/mycart');
-    }
+        navigate('/appointments');
+    };
 
-    return(
-        <div className="background7">
-        <div className= "container"></div>
-        <button onClick={handleClick} className="mycartpurple4">
-        <img src="./Images/cart PURPLE.png" alt="Description" className="mycartpurple4-icon" />
-        </button>
-        <img src="./Images/MyPets underline.png" alt="Description" className="mypetspageselected" />
-        <div className="MyPetsTitle">My Pets</div>
-        <NavBar/>
-        <Layout/>
+    return (
+        <div>
+            {/* Original button */}
+            <MyButton onClick={handleClick} label="Original Button" style={{ position: 'absolute', left: 20 }} />
+
+            {/* Duplicate button */}
+            <MyButton onClick={handleClick} label="Duplicate Button" style={{ position: 'absolute', left: 200 }} />
         </div>
-    )
-
+    );
 
 }

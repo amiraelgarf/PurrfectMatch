@@ -10,9 +10,13 @@ import Login from "./pages/Login";
 
 import MyPets from "./pages/mypets";
 import MyCart from "./pages/mycart";
+
+import ViewPet from "./pages/ViewPet";
+
 import QuizResults from "./pages/QuizResults";
 
 import Register from "./pages/Register";
+
 
 
 //import Blogs from "./pages/Blogs";
@@ -25,21 +29,25 @@ export default function App() {
       <Routes>
         <Route path="/*" element={<Layout />}>
           <Route index element={<Home />} />
-          
+
+
         </Route>
+
+        <Route path="/home" element={<Home />} />
+        <Route path="/pets" element={<Pets />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/appointments" element={<Appointments />} />
+        <Route path="/quiz" element={<Quiz />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/mypets" element={<MyPets />} />
+        <Route path="/mycart" element={<MyCart />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/viewpet" element={<ViewPet />} />
         
-        <Route path="/home" element={<Home />}/>
-        <Route path="/pets" element={<Pets />}/>
-        <Route path="/products" element={<Products />}/>
-        <Route path="/appointments" element={<Appointments />}/>
-        <Route path="/quiz" element={<Quiz />}/>
-        <Route path="/profile" element={<Profile />}/>
-        <Route path="/mypets" element={<MyPets/>}/>
-        <Route path="/mycart" element={<MyCart/>}/>
         <Route path="QuizResults" element={<QuizResults/>}/>
-        <Route path="/login" element={<Login />}/>
         
         <Route path="register" element={<Register />}/>
+
 
       </Routes>
     </BrowserRouter>

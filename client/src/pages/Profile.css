@@ -1,0 +1,225 @@
+
+.background6{
+    width: 1520px;
+    height: 740px;
+    background-color: #DACDED;
+    display: flex;
+}
+
+.pagecontainer{
+    width: 705.6px;
+    height: 561.6px;
+    position: absolute;
+    left: 390px;
+    top: 130px;
+    z-index: 2; 
+}
+
+.welcome{
+    color: #FFF6EF;
+    font-size: 70px;
+    font-family: 'Abhaya LibreSmiBold';
+    top: 130px;
+    left: 420px;
+    position: absolute;
+    z-index: 20;
+    white-space: nowrap; 
+}
+
+
+.Name{
+    color: black;
+    font-size: 32px;
+    font-family: 'Abhaya LibreSmiBold';
+    top: 250px;
+    left: 420px;
+    position: absolute;
+    z-index: 7;
+    white-space: nowrap;
+}
+
+.DOB{
+    color: black;
+    font-size: 32px;
+    font-family: 'Abhaya LibreSmiBold';
+    top: 286px;
+    left: 420px;
+    position: absolute;
+    z-index: 7;
+    white-space: nowrap;
+}
+
+.Gender{
+    color: black;
+    font-size: 32px;
+    font-family: 'Abhaya LibreSmiBold';
+    top: 320px;
+    left: 420px;
+    position: absolute;
+    z-index: 7;
+    white-space: nowrap;
+}
+
+.PersonalityType{
+    color: black;
+    font-size: 32px;
+    font-family: 'Abhaya LibreSmiBold';
+    top: 355px;
+    left: 420px;
+    position: absolute;
+    z-index: 7;
+    white-space: nowrap;
+}
+
+.EnterOldPassword{
+    color: black;
+    font-size: 32px;
+    font-family: 'Abhaya LibreSmiBold';
+    top: 410px;
+    left: 420px;
+    position: absolute;
+    z-index: 7;
+    white-space: nowrap;
+}
+
+.ChangePasswordTo{
+    color: black;
+    font-size: 32px;
+    font-family: 'Abhaya LibreSmiBold';
+    top: 445px;
+    left: 420px;
+    position: absolute;
+    z-index: 7;
+    white-space: nowrap;
+}
+
+.Reminders{
+    color: black;
+    font-size: 46px;
+    font-family: 'Abhaya LibreSmiBold';
+    font-weight: 600;
+    top: 480px;
+    left: 418px;
+    position: absolute;
+    z-index: 7;
+    white-space: nowrap;
+}
+
+.RateLastVet{
+    color: black;
+    font-size: 32px;
+    font-family: 'Abhaya LibreSmiBold';
+    top: 610px;
+    left: 420px;
+    position: absolute;
+    z-index: 7;
+    white-space: nowrap;
+}
+
+.LogOut{
+    width: 130px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    position: absolute;
+    line-height: 10px;
+    top: 620px;
+    left: 920px;
+    background: #F07681;
+    color: #FFF6EF;
+    font-family: 'Abhaya Libre Medium';
+    font-weight: 300;
+    font-size: 20px;
+    z-index: 15;
+}
+
+.mycartpurple3{
+    width: 64px;
+    height: 65px;
+    position: absolute;
+    left: 1370px;
+    top: 55px;
+    z-index: 0;
+    background-color: transparent ;
+  }
+
+  .mycartpurple3-icon{
+    width: 64px;
+    height: 65px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 20;  
+  }
+
+/* .dropdown{
+    width: 900px;
+    height: 50px;
+    top: 50px;
+    left: 50px;
+    position: absolute;
+    background: #FFF6EF;
+    border-radius: 16px;
+    font-size:22px;
+    line-height: 25px;
+    font-family: 'Abhaya Libre Medium';
+    font-weight: 600;
+    z-index: 50;
+
+}
+
+  .custom-dropdown-button {
+    background-color: #DACDED;
+    color: black;
+    position: absolute;
+    top: 400 px;
+  }
+
+  .dropdown-menu ul {
+    color: #333333;
+    list-style: none
+  } */
+
+
+
+
+  /* .nav{
+    width: 900px;
+    height: 50px;
+    top: 50px;
+    left: 50px;
+    position: absolute;
+    background: #FFF6EF;
+    border-radius: 16px;
+    font-size:22px;
+    line-height: 25px;
+    font-family: 'Abhaya Libre Medium';
+    font-weight: 600;
+  }
+
+  .nav ul{
+    margin: 12px;
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+  }
+
+  .nav li {
+    transition: background-color 0.3s ease;
+    background-color: transparent; 
+    border-radius: 12px;
+    padding: 18px;
+    line-height: 1px;
+    position: relative;
+    color: black;
+    bottom: 6px;
+    right:25px;
+  }
+
+ .nav a{
+    color: inherit;
+  }
+
+ .nav a:hover{
+    color: inherit;
+ } */

@@ -1,0 +1,40 @@
+
+.logo{
+    width: 24px;
+    height: 27px;
+    position: absolute;
+    left: 24px;
+    top: 11px;
+    z-index: 12;
+  }
+
+  .PurrfectMatchLogo{
+    color: black;
+    font-size: 18px;
+    font-family: 'Abhaya LibreSmiBold';
+    font-weight: 600;
+    top: 13px;
+    left: 54px;
+    position: absolute;
+    z-index: 7;
+  }
+
+  .mypets{
+    width: 64px;
+    height: 65px;
+    position: absolute;
+    left: 1260px;
+    top: 52px;
+    z-index: 0;
+    background-color: transparent ;
+  }
+
+  .mypets-icon{
+    width: 64px;
+    height: 65px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 20;  
+  }
+

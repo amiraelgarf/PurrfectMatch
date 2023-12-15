@@ -37,42 +37,20 @@ function Login() {
 
     return (
       
-      <div className="login-container">
-        <div className="hamtaro-1-parent">
-        <img className="hamtaro-1-icon" alt="" src="/hamtaro-1@2x.png" />
-        <div className="purrfectmatchcom">PurrfectMatch.com</div>
-      </div>
-      <div className="authentication-child" /> 
-      {/* //outer oval */}
-      <div className="authentication-item" />
-      {/* //middle oval */}
-      <div className="authentication-inner" />
-      {/* //inner oval */}
+      <div className="backgroundauthentication">
+      <div className="login-container"> </div>
       <button className="sign-up" onClick= { ( )=> navigate("/register")}> <span>Sign Up</span></button>
-          <button className="login" onClick= { ( )=> navigate("/login")} > <span> Login </span> </button>
+      <button className="login" onClick= { ( )=> navigate("/login")} > <span> Login </span> </button>
 
-          <img className="screenshot-579-1" alt="" src="/screenshot-579-1@2x.png" />
-      {/* <div className="line-div" /> */}
-      <img className="line-icon" alt="" src="/line-5.svg" />
-
-      {/* <div className="group-div">
-        <div className="group-child" />
-      </div> */}
-      {/* <div className="authentication-inner1">
-        <div className="group-child" />
-      </div> */}
-
-  
           <form onSubmit={handleSubmit}>
-            
               <input type="text" placeholder="Username" value= {logindata.Username} onChange={handleInputChange} name="Username"/>
-
-              
               <input type="text" placeholder="Password"  className="password" value={logindata.Password} onChange={handleInputChange} name="Password"  />
               <button className="login1"> LogIn</button>
           </form>
-          <img className="image-24-icon" alt="" src="/image-24@2x.png" />
-      <img className="image-25-icon" alt="" src="/image-25@2x.png" />
+      <img src="./Images/authentication dog.png" alt="Description" className="dog" />
+      <img src="./Images/authentication circles.png" alt="Description" className="circles" />
+      <img src="./Images/logo noname.png" alt="Description" className="logo" />
+      <div className="PurrfectMatchLogo">PurrfectMatch.com</div>
 
       </div>
     );

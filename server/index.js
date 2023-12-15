@@ -280,6 +280,274 @@ app.post("/pets/insert", (req, res) => {
 });
 
 
+//List all vets:
+
+app.get("/vets", (req, res) => {
+  connection.query("SELECT * FROM vet", function (err, rows) {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+    return res.status(200).json(rows);
+  });
+});
+
+//Get details of a specific vet:
+
+app.get("/vets/:id", (req, res) => {
+  const vetId = req.params.id;
+  connection.query("SELECT * FROM vet WHERE UserID = ?", [vetId], function (err, row) {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Internal Server Error" });
+    } else if (!row.length) {
+      return res.status(404).json({ error: "Vet not found" });
+    }
+    return res.status(200).json(row);
+  });
+});
+
+//Add a new vet:
+
+app.post("/vets", (req, res) => {
+  const { firstName, lastName, dateOfBirth, age, gender, buildingNum, streetNum, city, speciality, schedule, centerId, username, password } = req.body;
+  connection.query(
+    "INSERT INTO user (FirstName, LastName, DateOfBirth, Age, Gender) VALUES (?, ?, ?, ?, ?)",
+    [firstName, lastName, dateOfBirth, age, gender],
+    function (err, result) {
+      if (err) {
+        console.error(err);
+        return res.status(500).json({ error: "Internal Server Error" });
+      }
+
+      const userId = result.insertId;
+
+      connection.query(
+        "INSERT INTO vet (UserID, BuildingNum, StreetNum, City, Speciality, Schedule, CenterID, Username) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+        [userId, buildingNum, streetNum, city, speciality, schedule, centerId, username],
+        function (err) {
+          if (err) {
+            console.error(err);
+            return res.status(500).json({ error: "Internal Server Error" });
+          }
+
+          // Additional logic if needed
+
+          return res.status(201).json({ vetId: result.insertId });
+        }
+      );
+    }
+  );
+});
+
+//Update vet details:
+
+app.put("/vets/:id", (req, res) => {
+  const vetId = req.params.id;
+  const { firstName, lastName, dateOfBirth, age, gender, buildingNum, streetNum, city, speciality, schedule, centerId, username } = req.body;
+  connection.query(
+    "UPDATE vet SET BuildingNum = ?, StreetNum = ?, City = ?, Speciality = ?, Schedule = ?, CenterID = ?, Username = ? WHERE UserID = ?",
+    [buildingNum, streetNum, city, speciality, schedule, centerId, username, vetId],
+    function (err, result) {
+      if (err) {
+        console.error(err);
+        return res.status(500).json({ error: "Internal Server Error" });
+      } else if (result.affectedRows === 0) {
+        return res.status(404).json({ error: "Vet not found" });
+      }
+      return res.status(200).json({ message: "Vet updated successfully" });
+    }
+  );
+});
+
+
+//Delete a vet:
+app.delete("/vets/:id", (req, res) => {
+  const vetId = req.params.id;
+  connection.query("DELETE FROM vet WHERE UserID = ?", [vetId], function (err, result) {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Internal Server Error" });
+    } else if (result.affectedRows === 0) {
+      return res.status(404).json({ error: "Vet not found" });
+    }
+    return res.status(200).json({ message: "Vet deleted successfully" });
+  });
+});
+
+
+//Appointment Operations:
+//List all appointments:
+app.get("/appointments", (req, res) => {
+  connection.query("SELECT * FROM appointment", function (err, rows) {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+    return res.status(200).json(rows);
+  });
+});
+
+
+//Get details of a specific appointment:
+
+
+app.get("/appointments/:id", (req, res) => {
+  const appointmentId = req.params.id;
+  connection.query("SELECT * FROM appointment WHERE AppointmentID = ?", [appointmentId], function (err, row) {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Internal Server Error" });
+    } else if (!row.length) {
+      return res.status(404).json({ error: "Appointment not found" });
+    }
+    return res.status(200).json(row);
+  });
+});
+
+
+//Schedule a new appointment:
+
+app.post("/appointments", (req, res) => {
+  const { date, time, vetId, petId, customerId, centerId } = req.body;
+  connection.query(
+    "INSERT INTO appointment (Date, Time, VetID, PetID, CustomerID, CenterID) VALUES (?, ?, ?, ?, ?, ?)",
+    [date, time, vetId, petId, customerId, centerId],
+    function (err, result) {
+      if (err) {
+        console.error(err);
+        return res.status(500).json({ error: "Internal Server Error" });
+      }
+
+      // Additional logic if needed
+
+      return res.status(201).json({ appointmentId: result.insertId });
+    }
+  );
+});
+
+
+//Update appointment details:
+
+app.put("/appointments/:id", (req, res) => {
+  const appointmentId = req.params.id;
+  const { date, time, vetId, petId, customerId, centerId } = req.body;
+  connection.query(
+    "UPDATE appointment SET Date = ?, Time = ?, VetID = ?, PetID = ?, CustomerID = ?, CenterID = ? WHERE AppointmentID = ?",
+    [date, time, vetId, petId, customerId, centerId, appointmentId],
+    function (err, result) {
+      if (err) {
+        console.error(err);
+        return res.status(500).json({ error: "Internal Server Error" });
+      } else if (result.affectedRows === 0) {
+        return res.status(404).json({ error: "Appointment not found" });
+      }
+      return res.status(200).json({ message: "Appointment updated successfully" });
+    }
+  );
+});
+
+
+//Cancel an appointment:
+
+app.delete("/appointments/:id", (req, res) => {
+  const appointmentId = req.params.id;
+  connection.query("DELETE FROM appointment WHERE AppointmentID = ?", [appointmentId], function (err, result) {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Internal Server Error" });
+    } else if (result.affectedRows === 0) {
+      return res.status(404).json({ error: "Appointment not found" });
+    }
+    return res.status(200).json({ message: "Appointment canceled successfully" });
+  });
+});
+
+//Product Operations:
+//List all products:
+app.get("/products", (req, res) => {
+  connection.query("SELECT * FROM product", function (err, rows) {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Internal Server Error" });
+    }
+    return res.status(200).json(rows);
+  });
+});
+
+
+//Get details of a specific product:
+
+app.get("/products/:id", (req, res) => {
+  const productId = req.params.id;
+  connection.query("SELECT * FROM product WHERE ProductID = ?", [productId], function (err, row) {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Internal Server Error" });
+    } else if (!row.length) {
+      return res.status(404).json({ error: "Product not found" });
+    }
+    return res.status(200).json(row);
+  });
+});
+
+
+//Add a new product:
+
+app.post("/products", (req, res) => {
+  const { name, description, stock, productionDate, expirationDate, cost, type, centerId } = req.body;
+  connection.query(
+    "INSERT INTO product (Name, Description, Stock, ProductionDate, ExpirationDate, Cost, Type, CenterID) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+    [name, description, stock, productionDate, expirationDate, cost, type, centerId],
+    function (err, result) {
+      if (err) {
+        console.error(err);
+        return res.status(500).json({ error: "Internal Server Error" });
+      }
+
+      // Additional logic if needed
+
+      return res.status(201).json({ productId: result.insertId });
+    }
+  );
+});
+
+
+//Update product details:
+
+app.put("/products/:id", (req, res) => {
+  const productId = req.params.id;
+  const { name, description, stock, productionDate, expirationDate, cost, type, centerId } = req.body;
+  connection.query(
+    "UPDATE product SET Name = ?, Description = ?, Stock = ?, ProductionDate = ?, ExpirationDate = ?, Cost = ?, Type = ?, CenterID = ? WHERE ProductID = ?",
+    [name, description, stock, productionDate, expirationDate, cost, type, centerId, productId],
+    function (err, result) {
+      if (err) {
+        console.error(err);
+        return res.status(500).json({ error: "Internal Server Error" });
+      } else if (result.affectedRows === 0) {
+        return res.status(404).json({ error: "Product not found" });
+      }
+      return res.status(200).json({ message: "Product updated successfully" });
+    }
+  );
+});
+
+
+//Delete a product:
+
+app.delete("/products/:id", (req, res) => {
+  const productId = req.params.id;
+  connection.query("DELETE FROM product WHERE ProductID = ?", [productId], function (err, result) {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Internal Server Error" });
+    } else if (result.affectedRows === 0) {
+      return res.status(404).json({ error: "Product not found" });
+    }
+    return res.status(200).json({ message: "Product deleted successfully" });
+  });
+});
 
 
 

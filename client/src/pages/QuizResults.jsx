@@ -1,4 +1,3 @@
-
 import React from 'react';
 import NavBar from './NavBarCustomer.jsx';
 import './QuizResults.jsx';

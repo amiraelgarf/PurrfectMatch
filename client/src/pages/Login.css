@@ -1,3 +1,52 @@
+.hamtaro-1-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 45px;
+  object-fit: cover;
+}
+.purrfectmatchcom {
+  position: absolute;
+  top: 12px;
+  left: 52px;
+}
+.hamtaro-1-parent {
+  position: absolute;
+  top: 30px;
+  left: 38px;
+  width: 246px;
+  height: 45px;
+  text-align: left;
+  font-size: 24px;
+  color: #000;
+}
+.authentication-child {
+  position: absolute;
+  top: -106px;
+  left: 1031px;
+  border-radius: 50%;
+  background-color: #daf4f3;
+  width: 1687px;
+  height: 1687px;
+}
+.authentication-inner,
+.authentication-item {
+  position: absolute;
+  top: 151px;
+  left: 1256px;
+  border-radius: 50%;
+  background-color: #a3e5e0;
+  width: 1237px;
+  height: 1175px;
+}
+.authentication-inner {
+  top: 305px;
+  left: 1418px;
+  background-color: #38bfb6;
+  width: 913px;
+  height: 866px;
+}
 
 .backgroundauthentication{
     width: 1520px;
@@ -36,6 +85,7 @@
   height: 866px;
 }
 
+
 .login-container{
   display: grid;
   background-color: #FFF6EF;
@@ -49,8 +99,10 @@
   flex-shrink: 0;
   border-radius: 12px;
   position: absolute;
+
   top: 460px;
   left: 620px;
+
   background: #F07681;
   color: #FFF6EF;
   font-family: 'Abhaya Libre Medium';
@@ -73,10 +125,12 @@
   cursor: pointer;
   margin: 5px;
   position: absolute;
+
   top: 90px;
   left: 228px;
   font-family: 'Abhaya Libre Medium';
   font-weight: 600;
+
 }
 
 .login span {
@@ -123,6 +177,7 @@
   font-family: 'Abhaya Libre Medium';
   font-weight: 600;
   font-size: 50px;
+
 }
 
 .sign-up span {
@@ -242,5 +297,3 @@ input[type=text].password {
   position: absolute;
   z-index: 10;
 }
-
-

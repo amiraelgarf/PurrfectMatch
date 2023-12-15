@@ -1,0 +1,55 @@
+.register
+{
+  width: 166px;
+  height: 49px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  position: absolute;
+  top: 921px;
+  left: 806px;
+  font-family: var(--font-abhaya-libre-extrabold);
+  background: #F07681;
+}
+
+input[type=text].first-name
+{
+    position: absolute;
+    top: 340px;
+    left: 215px;
+}
+input[type=text].last-name {
+    position: absolute;
+    top: 450px;
+    left: 215px;
+}
+
+input[type=text].gender{
+    position: absolute;
+    top: 645px;
+    left: 215px;
+    width: 532.5px;
+    height: 75px;
+
+}
+
+input[type=text].password1{
+    position: absolute;
+  top: 837px;
+  left: 212px;
+  width: 532.5px;
+  height: 75px;
+}
+
+input[type=text].username{
+    position: absolute;
+  top: 741px;
+  left: 212px;
+  width: 532.5px;
+  height: 75px;
+}
+
+input[type=text].date-of-birth{
+    position: absolute;
+  top: 550px;
+  left: 216px;
+}

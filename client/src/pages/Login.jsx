@@ -41,6 +41,7 @@ function Login() {
       <div className="login-container"> </div>
       <button className="sign-up" onClick= { ( )=> navigate("/register")}> <span>Sign Up</span></button>
       <button className="login" onClick= { ( )=> navigate("/login")} > <span> Login </span> </button>
+
           <form onSubmit={handleSubmit}>
               <input type="text" placeholder="Username" value= {logindata.Username} onChange={handleInputChange} name="Username"/>
               <input type="text" placeholder="Password"  className="password" value={logindata.Password} onChange={handleInputChange} name="Password"  />
@@ -50,6 +51,7 @@ function Login() {
       <img src="./Images/authentication circles.png" alt="Description" className="circles" />
       <img src="./Images/logo noname.png" alt="Description" className="logo" />
       <div className="PurrfectMatchLogo">PurrfectMatch.com</div>
+
       </div>
     );
   }

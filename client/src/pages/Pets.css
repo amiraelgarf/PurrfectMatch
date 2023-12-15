@@ -3,6 +3,7 @@
   height: 740px;
   background-color: #DACDED;
   display: flex;
+  overflow: hidden;
 }
 
 .mycartpurple2 {
@@ -190,6 +191,68 @@
   width: 280px;
 }
 
+.cstandard {
+  background-color: #6f3db2;
+  border-radius: 172px;
+  height: 280px;
+  position: absolute;
+  width: 280px;
+}
+
+.tSunshine {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya Libre ExtraBold';
+  font-size: 60px;
+  font-weight: 400;
+  left: 450px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 520px;
+  white-space: nowrap;
+  width: 215px;
+  z-index: 20;
+}
+
+.dSunshine {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 26px;
+  font-weight: 400;
+  left: 450px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 560px;
+  white-space: nowrap;
+  width: 215px;
+  z-index: 20;
+}
+
+
+.bSunshine {
+  background-color: #f07681;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0;
+  height: 40px;
+  text-align: center;
+  border-radius: 12px;
+  left: 485px;
+  position: absolute;
+  top: 590px;
+  width: 150px;
+  z-index: 30;
+}
+
+
+
 .Sunshine {
   border-radius: 16px;
   border-color: #6f3db2;
@@ -222,6 +285,60 @@
   z-index: 20;
 }
 
+.tNala {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya Libre ExtraBold';
+  font-size: 60px;
+  font-weight: 400;
+  left: 810px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 520px;
+  white-space: nowrap;
+  width: 215px;
+  z-index: 20;
+}
+
+.dNala {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 26px;
+  font-weight: 400;
+  left: 810px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 560px;
+  white-space: nowrap;
+  width: 215px;
+  z-index: 20;
+}
+
+
+.bNala {
+  background-color: #f07681;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0;
+  height: 40px;
+  text-align: center;
+  border-radius: 12px;
+  left: 840px;
+  position: absolute;
+  top: 590px;
+  width: 150px;
+  z-index: 30;
+}
+
+
+
 .cPeanut {
   background-color: #6f3db2;
   border-radius: 172px;
@@ -243,13 +360,65 @@
   z-index: 20;
 }
 
+.tPeanut {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya Libre ExtraBold';
+  font-size: 60px;
+  font-weight: 400;
+  left: 1150px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 520px;
+  white-space: nowrap;
+  width: 215px;
+  z-index: 20;
+}
+
+.dPeanut {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 26px;
+  font-weight: 400;
+  left: 1140px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 560px;
+  white-space: nowrap;
+  width: 215px;
+  z-index: 20;
+}
+
+
+.bPeanut {
+  background-color: #f07681;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0;
+  height: 40px;
+  text-align: center;
+  border-radius: 12px;
+  left: 1180px;
+  position: absolute;
+  top: 590px;
+  width: 150px;
+  z-index: 30;
+}
+
 .c1 {
   background-color: #6f3db2;
   border-radius: 172px;
   height: 280px;
   left: 420px;
   position: absolute;
-  top: 550px;
+  top: 650px;
   width: 280px;
 }
 
@@ -259,7 +428,7 @@
   height: 280px;
   left: 770px;
   position: absolute;
-  top: 550px;
+  top: 650px;
   width: 280px;
 }
 
@@ -269,6 +438,6 @@
   height: 280px;
   left: 1120px;
   position: absolute;
-  top: 550px;
+  top: 650px;
   width: 280px;
 }

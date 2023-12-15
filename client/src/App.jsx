@@ -9,6 +9,7 @@ import Profile from './pages/Profile';
 import Login from "./pages/Login";
 import MyPets from "./pages/mypets";
 import MyCart from "./pages/mycart";
+import ViewPet from "./pages/ViewPet";
 
 //import Blogs from "./pages/Blogs";
 //import Contact from "./pages/Contact";
@@ -23,19 +24,20 @@ export default function App() {
           {/* <Route path="blogs" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} /> */
-        }
-          
+          }
+
         </Route>
-        
-        <Route path="/home" element={<Home />}/>
-        <Route path="/pets" element={<Pets />}/>
-        <Route path="/products" element={<Products />}/>
-        <Route path="/appointments" element={<Appointments />}/>
-        <Route path="/quiz" element={<Quiz />}/>
-        <Route path="/profile" element={<Profile />}/>
-        <Route path="/mypets" element={<MyPets/>}/>
-        <Route path="/mycart" element={<MyCart/>}/>
-        <Route path="/login" element={<Login />}/>
+
+        <Route path="/home" element={<Home />} />
+        <Route path="/pets" element={<Pets />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/appointments" element={<Appointments />} />
+        <Route path="/quiz" element={<Quiz />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/mypets" element={<MyPets />} />
+        <Route path="/mycart" element={<MyCart />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/viewpet" element={<ViewPet />} />
       </Routes>
     </BrowserRouter>
   );

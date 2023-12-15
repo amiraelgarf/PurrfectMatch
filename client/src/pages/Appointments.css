@@ -1,26 +1,408 @@
-
-.background4{
-    width: 1520px;
-    height: 740px;
-    background-color: #DACDED;
-    display: flex;
+.background4 {
+  width: 1520px;
+  height: 740px;
+  background-color: #DACDED;
+  display: flex;
 }
 
-.mycartpurple{
-    width: 64px;
-    height: 65px;
-    position: absolute;
-    left: 1370px;
-    top: 55px;
-    z-index: 0;
-    background-color: transparent ;
-  }
+.mycartpurple {
+  width: 64px;
+  height: 65px;
+  position: absolute;
+  left: 1370px;
+  top: 55px;
+  z-index: 0;
+  background-color: transparent;
+}
 
-  .mycartpurple-icon{
-    width: 64px;
-    height: 65px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 20;  
-  }
+.mycartpurple-icon {
+  width: 64px;
+  height: 65px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 20;
+}
+
+.filter2 {
+  background-color: #fff5ef;
+  border-radius: 0px 40px 0px 0px;
+  height: 580px;
+  left: 0;
+  position: absolute;
+  top: 150px;
+  width: 320px;
+  z-index: 10;
+}
+
+.searchbar2 {
+  background-color: #dacded75;
+  border-radius: 40px;
+  height: 40px;
+  left: 50px;
+  position: absolute;
+  top: 165px;
+  width: 250px;
+  z-index: 20;
+}
+
+.search2 {
+  color: #492f6c;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 22px;
+  font-weight: 400;
+  left: 30px;
+  letter-spacing: 0;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  top: 160px;
+  white-space: nowrap;
+  width: 160px;
+  z-index: 30;
+}
+
+.searchicon2 {
+  height: 30px;
+  left: 10px;
+  object-fit: cover;
+  position: absolute;
+  top: 169px;
+  width: 30px;
+  z-index: 30;
+}
+
+.aspeciality {
+  height: 10px;
+  left: 60px;
+  object-fit: cover;
+  position: absolute;
+  top: 250px;
+  width: 14px;
+  z-index: 10;
+}
+
+.sspeciality {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 22px;
+  font-weight: 400;
+  left: 60px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: 125px;
+  z-index: 20;
+  top: 240px;
+}
+
+.alocation {
+  height: 10px;
+  left: 60px;
+  object-fit: cover;
+  position: absolute;
+  top: 300px;
+  width: 14px;
+  z-index: 10;
+}
+
+.slocation {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 22px;
+  font-weight: 400;
+  left: 60px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: left;
+  top: 290px;
+  white-space: nowrap;
+  width: 115px;
+  z-index: 20;
+}
+
+.arating {
+  height: 10px;
+  left: 60px;
+  object-fit: cover;
+  position: absolute;
+  top: 350px;
+  width: 14px;
+  z-index: 10;
+}
+
+.srating {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 22px;
+  font-weight: 400;
+  left: 60px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: left;
+  top: 340px;
+  white-space: nowrap;
+  width: 95px;
+  z-index: 20;
+}
+
+.cDr1 {
+  background-color: #6f3db2;
+  border-radius: 172px;
+  height: 280px;
+  left: 420px;
+  position: absolute;
+  top: 200px;
+  width: 280px;
+}
+
+
+.tDr1 {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya Libre ExtraBold';
+  font-size: 60px;
+  font-weight: 400;
+  left: 450px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 520px;
+  white-space: nowrap;
+  width: 215px;
+  z-index: 20;
+}
+
+.dDr1 {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 26px;
+  font-weight: 400;
+  left: 450px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 560px;
+  white-space: nowrap;
+  width: 215px;
+  z-index: 20;
+}
+
+
+.bDr1 {
+  background-color: #f07681;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0;
+  height: 40px;
+  text-align: center;
+  border-radius: 12px;
+  left: 460px;
+  position: absolute;
+  top: 590px;
+  width: 190px;
+  z-index: 30;
+}
+
+
+
+.Dr1 {
+  border-radius: 16px;
+  border-color: #6f3db2;
+  height: 240px;
+  left: 440px;
+  position: absolute;
+  top: 220px;
+  width: 240px;
+  z-index: 20;
+}
+
+.cDr2 {
+  background-color: #6f3db2;
+  border-radius: 172px;
+  height: 280px;
+  left: 770px;
+  position: absolute;
+  top: 200px;
+  width: 280px;
+}
+
+.Dr2 {
+  border-radius: 16px;
+  border-color: #6f3db2;
+  height: 240px;
+  left: 790px;
+  position: absolute;
+  top: 220px;
+  width: 240px;
+  z-index: 20;
+}
+
+.tDr2 {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya Libre ExtraBold';
+  font-size: 60px;
+  font-weight: 400;
+  left: 800px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 520px;
+  white-space: nowrap;
+  width: 215px;
+  z-index: 20;
+}
+
+.dDr2 {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 26px;
+  font-weight: 400;
+  left: 800px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 560px;
+  white-space: nowrap;
+  width: 215px;
+  z-index: 20;
+}
+
+
+.bDr2 {
+  background-color: #f07681;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0;
+  height: 40px;
+  text-align: center;
+  border-radius: 12px;
+  left: 815px;
+  position: absolute;
+  top: 590px;
+  width: 190px;
+  z-index: 30;
+}
+
+
+
+.cDr3 {
+  background-color: #6f3db2;
+  border-radius: 172px;
+  height: 280px;
+  left: 1120px;
+  position: absolute;
+  top: 200px;
+  width: 280px;
+}
+
+.Dr3 {
+  border-radius: 16px;
+  border-color: #6f3db2;
+  height: 240px;
+  left: 1140px;
+  position: absolute;
+  top: 220px;
+  width: 240px;
+  z-index: 20;
+}
+
+.tDr3 {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya Libre ExtraBold';
+  font-size: 60px;
+  font-weight: 400;
+  left: 1150px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 520px;
+  white-space: nowrap;
+  width: 215px;
+  z-index: 20;
+}
+
+.dDr3 {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 26px;
+  font-weight: 400;
+  left: 1140px;
+  letter-spacing: 0;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  top: 560px;
+  white-space: nowrap;
+  width: 225px;
+  z-index: 20;
+}
+
+
+.bDr3 {
+  background-color: #f07681;
+  font-family: 'Abhaya LibreSmiBold';
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0;
+  height: 40px;
+  text-align: center;
+  border-radius: 12px;
+  left: 1160px;
+  position: absolute;
+  top: 590px;
+  width: 190px;
+  z-index: 30;
+}
+
+.c1 {
+  background-color: #6f3db2;
+  border-radius: 172px;
+  height: 280px;
+  left: 420px;
+  position: absolute;
+  top: 650px;
+  width: 280px;
+}
+
+.c2 {
+  background-color: #6f3db2;
+  border-radius: 172px;
+  height: 280px;
+  left: 770px;
+  position: absolute;
+  top: 650px;
+  width: 280px;
+}
+
+.c3 {
+  background-color: #6f3db2;
+  border-radius: 172px;
+  height: 280px;
+  left: 1120px;
+  position: absolute;
+  top: 650px;
+  width: 280px;
+}

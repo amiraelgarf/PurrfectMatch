@@ -9,6 +9,7 @@ import Profile from './pages/Profile';
 import Login from "./pages/Login";
 import MyPets from "./pages/mypets";
 import MyCart from "./pages/mycart";
+import QuizResults from "./pages/QuizResults";
 
 //import Blogs from "./pages/Blogs";
 //import Contact from "./pages/Contact";
@@ -35,6 +36,7 @@ export default function App() {
         <Route path="/profile" element={<Profile />}/>
         <Route path="/mypets" element={<MyPets/>}/>
         <Route path="/mycart" element={<MyCart/>}/>
+        <Route path="QuizResults" element={<QuizResults/>}/>
         <Route path="/login" element={<Login />}/>
       </Routes>
     </BrowserRouter>

@@ -1,5 +1,6 @@
 import {useMatch, useResolvedPath, NavLink, useLocation } from "react-router-dom";
 import { useState } from 'react';
+import './NavBarCustomer.css'
 
 export default function NavBar({style}){
   
@@ -26,6 +27,9 @@ export default function NavBar({style}){
         dynamicStyle = { borderColor: '#38BFB6', borderStyle: 'solid', borderWidth: '5px' };
         break;
       case '/profile':
+        dynamicStyle = { borderColor: '#6F3EB3', borderStyle: 'solid', borderWidth: '5px' };
+        break;
+        case '/mypets':
         dynamicStyle = { borderColor: '#6F3EB3', borderStyle: 'solid', borderWidth: '5px' };
         break;
         default:
@@ -57,6 +61,12 @@ export default function NavBar({style}){
             break;
           case '/profile':
             dynamicStyle = { backgroundColor: '#6F3EB3', color: '#FFF6EF' };
+            break;
+            case '/mypets':
+            dynamicStyle = { backgroundColor: '#6F3EB3', color: '#FFF6EF' };
+            break;
+            case '/mycart':
+            dynamicStyle = {backgroundColor: '#38BFB6', color: '#FFF6EF' };
             break;
             }
             return { ...dynamicStyle, ...style };

@@ -1,0 +1,128 @@
+
+.background
+{
+    background: #DAF4F3;
+}
+
+.sunshine
+{
+    width: 701px;
+    height: 822px;
+    flex-shrink: 0;
+    border-radius: 55px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.petname
+{
+    color: #000;
+    text-align: center;
+    font-family: Abhaya Libre ExtraBold;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 7.2px;
+    position: absolute;
+    top: 140px;
+    left: 850px; 
+}
+
+.personality
+{
+    width: 449px;
+    height: 84px;
+    flex-shrink: 0;
+    color: #FFF6EF;
+    text-align: center;
+    font-family: Abhaya Libre ExtraBold;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: absolute;
+    top: 240px;
+    left: 760px; 
+}
+
+.description
+{
+    width: 599px;
+    color: #000;
+    text-align: center;
+    font-family: Abhaya Libre ExtraBold;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 50px; /* 131.579% */
+    position: absolute;
+    top: 320px;
+    left: 810px; 
+}
+
+.retakequiz
+{
+    color: #000;
+    text-align: center;
+    font-family: Abhaya Libre Medium;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0px; /* 156.25% */
+    position: absolute;
+    top: 570px;
+    left: 850px; 
+    width: 187px;
+    height: 59px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFBE00;
+}
+
+.disc_alt
+{
+    color: #000;
+    font-family: Abhaya Libre Medium;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 156.25% */
+    position: absolute;
+    top: 570px;
+    left: 1150px; 
+    width: 187px;
+    height: 59px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFBE00;
+}
+
+.retakequizdes
+{
+    color: #492F6C;
+    text-align: center;
+    font-family: Abhaya Libre Medium;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 100% */
+    position: absolute;
+    top: 650px;
+    left: 1120px; 
+    right: 150px;
+
+}
+
+.disc_alt_des
+{
+    color: #492F6C;
+    text-align: center;
+    font-family: Abhaya Libre Medium;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 100% */
+    position: absolute;
+    top: 650px;
+    left: 800px; 
+    right: 430px;
+}

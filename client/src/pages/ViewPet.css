@@ -70,7 +70,7 @@
 
 }
 
-.b1 {
+.button1 {
     background-color: #f07681;
     font-family: 'Abhaya LibreSmiBold';
     font-size: 25px;
@@ -87,7 +87,7 @@
     z-index: 30;
 }
 
-.b2 {
+.button2 {
     background-color: #f07681;
     font-family: 'Abhaya LibreSmiBold';
     font-size: 25px;
@@ -104,7 +104,7 @@
     z-index: 30;
 }
 
-.b3 {
+.button3 {
     background-color: #f07681;
     font-family: 'Abhaya LibreSmiBold';
     font-size: 25px;

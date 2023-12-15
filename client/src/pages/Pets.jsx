@@ -1,5 +1,8 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
 import NavBar from "./NavBarCustomer";
 import Layout from "./Layout";
 import './Pets.css'
@@ -13,6 +16,24 @@ function ImageBackground(style) {
 }
 
 export default function Pets() {
+
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+
+        const response = await axios.get('http://localhost:3000/pets');
+        console.log(response);
+        setData(response.data)
+      } catch (error) {
+        // Step 6: Handle errors and update the error state
+        console.log(error);
+      }
+      }
+      fetchData();
+  }, []);
+
   const navigate = useNavigate();
   const handleClick = () => {
     navigate('/mycart');
@@ -36,7 +57,19 @@ export default function Pets() {
       <div className="searchbar"></div>
       <div className="filter" ></div>
 
-      <img src="./Images/Sunshine.png" alt="Description" className="Sunshine" />
+      {
+        data?.map((pet)=> (
+          <>
+        <img src="./Images/Sunshine.png" alt="Description" className="Sunshine" />
+        <div ></div>
+        <div >{pet.Name}</div>
+        <div >{pet.Breed}</div>
+        <button onClick={gotoPet} className='bSunshine'>More Info</button>
+        </>
+        ))
+      }
+
+      {/* <img src="./Images/Sunshine.png" alt="Description" className="Sunshine" />
       <div className='cSunshine'></div>
       <div className='tSunshine'>Sunshine</div>
       <div className='dSunshine'>Cat, Persion</div>
@@ -52,7 +85,7 @@ export default function Pets() {
       <div className='cPeanut'></div>
       <div className='tPeanut'>Peanut</div>
       <div className='dPeanut'>Dog, German Pinscher</div>
-      <button onClick={gotoPet} className='bPeanut'>More Info</button>
+      <button onClick={gotoPet} className='bPeanut'>More Info</button> */}
 
       <div className='c1'></div>
       <div className='c2'></div>

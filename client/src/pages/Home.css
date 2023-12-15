@@ -78,57 +78,6 @@
     z-index: 4;
   }
 
-  .nav{
-    width: 900px;
-    height: 50px;
-    top: 50px;
-    left: 50px;
-    position: absolute;
-    background: #FFF6EF;
-    border-radius: 16px;
-    font-size:22px;
-    line-height: 25px;
-    font-family: 'Abhaya Libre Medium';
-    font-weight: 600;
-  }
-
-  .nav ul{
-    margin: 12px;
-    list-style: none;
-    display: flex;
-    gap: 3rem;
-  }
-
-  .nav li {
-    transition: background-color 0.3s ease;
-    background-color: transparent; 
-    border-radius: 12px;
-    padding: 18px;
-    line-height: 1px;
-    position: relative;
-    color: black;
-    bottom: 6px;
-    right:25px;
-  }
-
- .nav a{
-    color: inherit;
-  }
-
- .nav a:hover{
-    color: inherit;
- }
-
- /* .nav li.active{
-    background-color: #38BFB6 ;
-    color: #FFF6EF;
- } */
-  
-  /* .nav li:hover {
-    background-color: #38BFB6;
-    color: #FFF6EF;
-  } */
-
 
 
   

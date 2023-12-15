@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+
 
 
 function MyButton({ onClick, label, style }) {
@@ -7,6 +9,7 @@ function MyButton({ onClick, label, style }) {
         <button onClick={onClick} style={style}>{label}</button>
     );
 }
+
 
 export default function MyPets() {
     const navigate = useNavigate();
@@ -23,4 +26,5 @@ export default function MyPets() {
             <MyButton onClick={handleClick} label="Duplicate Button" style={{ position: 'absolute', left: 200 }} />
         </div>
     );
+
 }

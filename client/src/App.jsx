@@ -7,9 +7,17 @@ import Appointments from './pages/Appointments';
 import Quiz from './pages/Quiz';
 import Profile from './pages/Profile';
 import Login from "./pages/Login";
+
 import MyPets from "./pages/mypets";
 import MyCart from "./pages/mycart";
+
 import ViewPet from "./pages/ViewPet";
+
+import QuizResults from "./pages/QuizResults";
+
+import Register from "./pages/Register";
+
+
 
 //import Blogs from "./pages/Blogs";
 //import Contact from "./pages/Contact";
@@ -21,10 +29,7 @@ export default function App() {
       <Routes>
         <Route path="/*" element={<Layout />}>
           <Route index element={<Home />} />
-          {/* <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} /> */
-          }
+
 
         </Route>
 
@@ -38,6 +43,12 @@ export default function App() {
         <Route path="/mycart" element={<MyCart />} />
         <Route path="/login" element={<Login />} />
         <Route path="/viewpet" element={<ViewPet />} />
+        
+        <Route path="QuizResults" element={<QuizResults/>}/>
+        
+        <Route path="register" element={<Register />}/>
+
+
       </Routes>
     </BrowserRouter>
   );

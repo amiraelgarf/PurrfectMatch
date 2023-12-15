@@ -1,5 +1,6 @@
 import { useMatch, useResolvedPath, NavLink, useLocation } from "react-router-dom";
 import { useState } from 'react';
+import './NavBarCustomer.css'
 
 export default function NavBar({ style }) {
 
@@ -31,51 +32,61 @@ export default function NavBar({ style }) {
       case '/profile':
         dynamicStyle = { borderColor: '#6F3EB3', borderStyle: 'solid', borderWidth: '5px' };
         break;
-      default:
+        case '/mypets':
+        dynamicStyle = { borderColor: '#6F3EB3', borderStyle: 'solid', borderWidth: '5px' };
+        break;
+        default:
         dynamicStyle = { borderColor: '#38BFB6', borderStyle: 'solid', borderWidth: '5px' };
-        break;
-    }
-    return { ...dynamicStyle, ...style };
-  };
+      break;
+        }
+          return { ...dynamicStyle, ...style };
+      };
 
 
 
-  const getNavbarStyleHover = (path) => {
-    let dynamicStyle = {};
-    switch (path) {
-      case '/home':
-        dynamicStyle = { backgroundColor: '#38BFB6', color: '#FFF6EF' };
-        break;
-      case '/pets':
-        dynamicStyle = { backgroundColor: '#6F3EB3', color: '#FFF6EF' };
-        break;
-      case '/products':
-        dynamicStyle = { backgroundColor: '#38BFB6', color: '#FFF6EF' };
-        break;
-      case '/appointments':
-        dynamicStyle = { backgroundColor: '#6F3EB3', color: '#FFF6EF' };
-        break;
-      case '/quiz':
-        dynamicStyle = { backgroundColor: '#38BFB6', color: '#FFF6EF' };
-        break;
-      case '/profile':
-        dynamicStyle = { backgroundColor: '#6F3EB3', color: '#FFF6EF' };
-        break;
-    }
-    return { ...dynamicStyle, ...style };
-  };
+      const getNavbarStyleHover = (path) => {
+        let dynamicStyle = {};
+        switch (path) {
+          case '/home':
+            dynamicStyle = {backgroundColor: '#38BFB6', color: '#FFF6EF' };
+            break;
+          case '/pets':
+            dynamicStyle = { backgroundColor: '#6F3EB3', color: '#FFF6EF' };
+            break;
+          case '/products':
+            dynamicStyle = { backgroundColor: '#38BFB6', color: '#FFF6EF'};
+            break;
+          case '/appointments':
+            dynamicStyle = { backgroundColor: '#6F3EB3', color: '#FFF6EF' };
+            break;
+          case '/quiz':
+            dynamicStyle = {backgroundColor: '#38BFB6', color: '#FFF6EF' };
+            break;
+          case '/profile':
+            dynamicStyle = { backgroundColor: '#6F3EB3', color: '#FFF6EF' };
+            break;
+            case '/mypets':
+            dynamicStyle = { backgroundColor: '#6F3EB3', color: '#FFF6EF' };
+            break;
+            case '/mycart':
+            dynamicStyle = {backgroundColor: '#38BFB6', color: '#FFF6EF' };
+            break;
+            }
+            return { ...dynamicStyle, ...style };
+          };
 
 
-  return (
-    <nav className="nav" style={getNavbarStyleBorder(location.pathname)}>
-      <ul>
-        <CustomLink to="/home" path="/home" setHoveredItem={setHoveredItem} hoveredItem={hoveredItem}>Home</CustomLink>
-        <CustomLink to="/pets" path="/pets" setHoveredItem={setHoveredItem} hoveredItem={hoveredItem}>Pets</CustomLink>
-        <CustomLink to="/products" path="/products" setHoveredItem={setHoveredItem} hoveredItem={hoveredItem}>Products</CustomLink>
-        <CustomLink to="/appointments" path="/appointments" setHoveredItem={setHoveredItem} hoveredItem={hoveredItem}>Appointments</CustomLink>
-        <CustomLink to="/quiz" path="/quiz" setHoveredItem={setHoveredItem} hoveredItem={hoveredItem}>Quiz</CustomLink>
-        <CustomLink to="/profile" path="/profile" setHoveredItem={setHoveredItem} hoveredItem={hoveredItem}>Profile</CustomLink>
-      </ul>
+    return(
+      <nav className="nav" style={getNavbarStyleBorder(location.pathname)}>
+    <ul>
+      <CustomLink to="/home" path="/home" setHoveredItem={setHoveredItem} hoveredItem={hoveredItem}>Home</CustomLink> 
+      <CustomLink to="/pets" path="/pets" setHoveredItem={setHoveredItem} hoveredItem={hoveredItem}>Pets</CustomLink>
+      <CustomLink to="/products" path="/products" setHoveredItem={setHoveredItem} hoveredItem={hoveredItem}>Products</CustomLink>
+      <CustomLink to="/appointments" path="/appointments" setHoveredItem={setHoveredItem} hoveredItem={hoveredItem}>Appointments</CustomLink>
+      <CustomLink to="/quiz" path="/quiz" setHoveredItem={setHoveredItem} hoveredItem={hoveredItem}>Quiz</CustomLink>
+      <CustomLink to="/profile" path="/profile" setHoveredItem={setHoveredItem} hoveredItem={hoveredItem}>Profile</CustomLink>
+    </ul>
+
     </nav>
   );
 

@@ -4,6 +4,7 @@ import NavBar from "./NavBarCustomer";
 import Layout from "./Layout";
 import './Pets.css'
 
+
 function ImageBackground(style) {
   fstyle = { cStandard, style }
   return (

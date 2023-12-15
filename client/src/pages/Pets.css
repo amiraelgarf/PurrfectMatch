@@ -1,13 +1,112 @@
+.background2-pet-page-container {
+  background-color: #dacded;
+  padding-top: 1px;
+}
 
-.background2 {
+.background2-pet-page {
+  margin: 200px auto;
+
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.side-bar-container {
+  box-sizing: content-box !important;
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 0px 40px 0px 0px;
+  width: 35%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff5ef;
+}
+.search-bar-side {
+  display: flex;
+  align-items: center;
+}
+.filter-list-side {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0px;
+}
+.filter-list-side li {
+  color: black;
+  margin: 15px 0px;
+  font-size: 24px;
+}
+.items-container {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 1800px;
+  flex-grow: 1;
+}
+.item-item {
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px 10px;
+}
+.searchbar-side-bar3 {
+  color: #259f97;
+  font-size: 24px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 40px;
+  padding: 5px 20px;
+  background-color: #ebf6f2;
+  flex-grow: 1;
+  margin: 0px 40px 0px 10px;
+}
+.searchIconforSideBar {
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+}
+.filter-list-side img {
+  width: 14px;
+  height: 10px;
+  margin: 0px 20px;
+}
+.item-inside-image {
+  border: 25px solid #38bfb6;
+  border-radius: 25px;
+  background-color: white;
+  margin: 25px;
+}
+.item-item div {
+  font-size: 24px;
+  margin: 5px 0px;
+}
+.item-label-name {
+  font-size: 46px !important;
+}
+.more-info-btn {
+  background-color: #f07681;
+  padding: 5px 40px;
+  font-size: 24px;
+}
+.item-inside-image img {
+  padding: 20px;
+  height: 70%;
+}
+/* .background2 {
   width: 1520px;
   height: 740px;
-  background-color: #DACDED;
+  background-color: #dacded;
   display: flex;
 
   overflow: hidden;
-}
-
+} */
+/* 
 .mycartpurple2 {
   width: 64px;
   height: 65px;
@@ -445,4 +544,4 @@
   top: 650px;
   width: 280px;
 }
-
+ */

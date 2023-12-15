@@ -31,7 +31,6 @@ export default function Pets() {
   }
   return (
     <div className="background2">
-      <div className="grid-container"></div>
       <div className="search">Search</div>
       <div className="searchbar"></div>
       <div className="filter" ></div>

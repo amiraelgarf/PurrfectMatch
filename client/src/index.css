@@ -1,16 +1,27 @@
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* fonts */
+  --font-amstelvaralpha: AmstelvarAlpha;
+  --font-abhaya-libre-medium: "Abhaya Libre Medium";
+  --font-abhaya-libre-extrabold: "Abhaya Libre ExtraBold";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* font sizes */
+  --font-size-16xl: 35px;
+  --font-size-19xl: 38px;
+  --font-size-51xl: 70px;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Colors */
+  --color-seashell: #fff6ef;
+  --color-black: #000;
+  --color-lightseagreen-100: #38bfb6;
+  --color-lightseagreen-200: #259f97;
+  --color-mintcream: #ebf6f2;
+  --color-gray: #918c88;
+
+  /* Border radiuses */
+  --br-36xl: 55px;
+  --br-xs: 12px;
+  --br-mini: 15px;
 }
 
 a {
@@ -66,3 +77,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+
+

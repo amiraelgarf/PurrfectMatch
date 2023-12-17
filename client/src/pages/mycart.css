@@ -1,0 +1,91 @@
+
+
+
+.background8{
+    width: 1520px;
+    height: 740px;
+    background-color: #DAF4F3;
+    display: flex;
+  
+}
+
+.mycartteal3{
+    width: 64px;
+    height: 65px;
+    position: absolute;
+    left: 1370px;
+    top: 55px;
+    z-index: 0;
+    background-color: transparent ;
+  }
+
+  .mycartteal3-icon{
+    width: 64px;
+    height: 65px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 20;  
+  }
+
+  .mycartpageselected{
+    width: 53px;
+    height: 8px;
+    position: absolute;
+    left: 1381px;
+    top: 120px;
+    z-index: 20;
+  }
+
+  .container{
+    width: 1400px;
+    height: 520px;
+    top: 150px;
+    left: 60px;
+    position: absolute;
+    background: #FFF6EF;
+    border-radius: 55px;
+    z-index: 20;
+  }
+
+  .MyCartTitle{
+    color: black;
+    font-size: 90px;
+    font-family: 'Abhaya LibreSmiBold';
+    font-weight: 600;
+    top: 150px;
+    left: 100px;
+    position: absolute;
+    z-index: 21;
+    white-space: nowrap;
+    letter-spacing: 7.20px;
+  }
+
+  .Total{
+    color: black;
+    font-size: 35px;
+    font-family: 'Abhaya LibreSmiBold';
+    font-weight: 600;
+    top: 160px;
+    left: 1090px;
+    position: absolute;
+    z-index: 20;
+  }
+
+  .confirmbutton{
+    width: 130px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    position: absolute;
+    line-height: 5px;
+    top: 215px;
+    left: 1220px;
+    background: #F07681;
+    color: #FFF6EF;
+    font-family: 'Abhaya Libre Medium';
+    font-weight: 300;
+    font-size: 20px;
+    z-index: 22;
+  }
+

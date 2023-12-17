@@ -56,6 +56,7 @@ export default function Products() {
       <img src="./Images/search.png" alt="Description" className="searchicon3" />
 
       <button onClick={handleClick} className="mycartteal">
+
         <img src="./Images/cart TEAL.png" alt="Description" className="mycartteal-icon" />
       </button>
 

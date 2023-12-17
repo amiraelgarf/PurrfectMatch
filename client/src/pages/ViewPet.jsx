@@ -37,9 +37,9 @@ export default function ViewPet() {
                 <br />
                 Sunshine was bred in one of our adoption centers personally and has been super playful with our staff.
             </p>
-            <button onClick={products} className='b1'>Products</button>
-            <button onClick={goback} className='b2'>Go Back</button>
-            <button className='b3'>Adopt</button>
+            <button onClick={products} className='button' id='b1'>Products</button>
+            <button onClick={goback} className='button' id='b2'>Go Back</button>
+            <button className='button' id='b3'>Adopt</button>
 
             <div className='tSunshine2' id=''>Sunshine</div>
             <button onClick={handleClick} className="mycartpurple5">

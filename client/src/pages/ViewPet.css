@@ -70,7 +70,8 @@
 
 }
 
-.b1 {
+
+.button {
     background-color: #f07681;
     font-family: 'Abhaya LibreSmiBold';
     font-size: 25px;
@@ -80,43 +81,21 @@
     height: 40px;
     text-align: center;
     border-radius: 12px;
-    left: 1050px;
+
     position: absolute;
     top: 620px;
     width: 160px;
     z-index: 30;
 }
 
-.b2 {
-    background-color: #f07681;
-    font-family: 'Abhaya LibreSmiBold';
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 0;
-    height: 40px;
-    text-align: center;
-    border-radius: 12px;
-    left: 1250px;
-    position: absolute;
-    top: 620px;
-    width: 160px;
-    z-index: 30;
-}
-
-.b3 {
-    background-color: #f07681;
-    font-family: 'Abhaya LibreSmiBold';
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 0;
-    height: 40px;
-    text-align: center;
-    border-radius: 12px;
+#b3 {
     left: 850px;
-    position: absolute;
-    top: 620px;
-    width: 160px;
-    z-index: 30;
+}
+
+#b2 {
+    left: 1250px;
+}
+
+#b1 {
+    left: 1050px;
 }
